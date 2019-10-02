@@ -10,29 +10,29 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Build Status](https://travis-ci.org/ngneat/spectator.svg?branch=master)](https://travis-ci.org/ngneat/spectator)
 
-> A Powerful Tool to Simplify Your Angular Tests
+> 簡化 Angular 測試的強大工具A Powerful Tool to Simplify Your Angular 
 
-Spectator helps you get rid of all the boilerplate grunt work, leaving you with readable, sleek and streamlined unit tests.
+Spectator 幫助你減少所有繁雜的重複工作，只留給你可讀的、流暢的單元測試。
 
 ## Features
-- ✅ Support for testing Angular components, directives and services
-- ✅ Easy DOM querying
-- ✅ Clean API for triggering keyboard/mouse/touch events
-- ✅ Testing `ng-content`
-- ✅ Custom Jasmine/Jest Matchers (toHaveClass, toBeDisabled..)
-- ✅ Routing testing support
-- ✅ HTTP testing support
-- ✅ Built-in support for entry components
-- ✅ Built-in support for component providers
-- ✅ Auto-mocking providers
-- ✅ Strongly typed
-- ✅ Jest Support
+- ✅ 支援 Angular component、directive 和 service 測試
+- ✅ 容易的 DOM 查詢
+- ✅ 透過簡潔的 API 觸發 keyboard/mouse/touch 事件
+- ✅ 測試 `ng-content`
+- ✅ 客製化的 Jasmine/Jest Matchers (toHaveClass, toBeDisabled..)
+- ✅ 支援 routing 測試
+- ✅ 支援 HTTP 測試
+- ✅ 內建支援 entry components
+- ✅ 內建支援 component providers
+- ✅ 自動化的 mock providers
+- ✅ 強型別
+- ✅ 支援 Jest
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Testing Components](#testing-components)
-  - [Events API](#events-api)
+- [安裝](#安裝)
+- [元件測試](#元件測試)
+  - [事件 API](#事件-api)
   - [Keyboard helpers](#keyboard-helpers)
   - [Mouse helpers](#mouse-helpers)
   - [Queries](#queries)
@@ -52,7 +52,7 @@ Spectator helps you get rid of all the boilerplate grunt work, leaving you with 
 - [Custom Matchers](#custom-matchers)
 - [Schematics](#schematics)
 
-## Installation
+## 安裝
 
 ### NPM
 
@@ -62,7 +62,8 @@ Spectator helps you get rid of all the boilerplate grunt work, leaving you with 
 
 `yarn add @ngneat/spectator --dev`
 
-## Testing Components
+## 元件測試
+
 Create a component factory by using the `createComponentFactory()` function, passing the component class that you want to test.
 The `createComponentFactory()` returns a function that will create a fresh component in each `it` block:
 
@@ -162,7 +163,8 @@ it('should emit the $event on click', () => {
 });
 ```
 
-### Events API
+### 事件 API
+
 Each one of the events can accept a `SpectatorElement` which can be one of the following: 
 
 ```ts
